@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import 'hammerjs';
+import 'chartjs-plugin-zoom';
+
 @Component({
   selector: 'app-my-line-chart',
   templateUrl: './my-line-chart.component.html',
@@ -21,7 +24,15 @@ export class MyLineChartComponent implements OnInit {
     animation: false,
     responsive: true,
     fill: false,
-    multiTooltipTemplate: '<%if (datasetLabel){%><%=datasetLabel %>: <%}%><%= value %>'
+    multiTooltipTemplate: '<%if (datasetLabel){%><%=datasetLabel %>: <%}%><%= value %>',
+    pan : {
+      enabled: true,
+      mode: 'xy'
+    },
+    zoom: {
+      enabled: true,
+      mode: 'xy'
+    }
   };
 
   public lineChartLegend = true;

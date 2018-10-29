@@ -10,6 +10,14 @@ export class MyBarChartComponent implements OnInit {
 public barChartOptions = {
   scaleShowVerticalLines : false,
   responsive: true,
+  pan : {
+    enabled: true,
+    mode: 'xy'
+  },
+  zoom: {
+    enabled: true,
+    mode: 'xy'
+  }
 };
 
 public barChartLabels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
