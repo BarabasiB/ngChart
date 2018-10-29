@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import 'hammerjs';
+import 'chartjs-plugin-zoom';
+
 @Component({
   selector: 'app-my-bar-chart',
   templateUrl: './my-bar-chart.component.html',

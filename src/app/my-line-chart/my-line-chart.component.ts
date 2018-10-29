@@ -27,11 +27,11 @@ export class MyLineChartComponent implements OnInit {
     multiTooltipTemplate: '<%if (datasetLabel){%><%=datasetLabel %>: <%}%><%= value %>',
     pan : {
       enabled: true,
-      mode: 'xy'
+      mode: 'x'
     },
     zoom: {
       enabled: true,
-      mode: 'xy'
+      mode: 'y'
     }
   };
 
